@@ -2,11 +2,7 @@ namespace Sudoku.Models;
 
 public class Field
 {
-    public Field(int fieldId)
-    {
-        FieldId = fieldId;
-    }
-
-    public int FieldId { get; }
+    public int FieldId { get; init; }
     public int Value { get; set; }
+    public bool isOrginalValue { get; init; }
 }
