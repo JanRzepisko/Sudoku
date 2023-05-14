@@ -1,0 +1,50 @@
+table {
+    border-collapse: collapse;
+    margin: 20px auto;
+  }
+  
+  table td {
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  table td:nth-child(3n),
+  table td:nth-child(6n) {
+    border-right: 2px solid black;
+  }
+  
+  table tr:nth-child(3n) td {
+    border-bottom: 2px solid black;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    border: 1px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e9e9e9;
+  }
+  .changed {
+    background-color: red;
+  }

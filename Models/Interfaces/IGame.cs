@@ -2,6 +2,6 @@ namespace Sudoku.Models.Interfaces;
 
 public interface IGame
 {
-    void Solve();
-    List<List<int>> Init(List<List<int>> input);
+    IReadOnlyList<IReadOnlyList<int>> Solve(IReadOnlyList<IReadOnlyList<int>> input);
+    void SetNumber(int fieldId, int value);
 }
